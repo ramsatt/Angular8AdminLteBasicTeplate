@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="script/common.css" rel="stylesheet">
+  <style>
+    .row + .row {
+      margin-top: 30px;
+    }
+  </style>
+  <script src="script/common.js"></script>
+  <script charset="UTF-8" src="../../js/locales/bootstrap-datepicker.es.js"></script>
+  <script charset="UTF-8" src="../../js/locales/bootstrap-datepicker.fr.js"></script>
+  <script charset="UTF-8" src="../../js/locales/bootstrap-datepicker.zh-TW.js"></script>
+  <script charset="UTF-8" src="../../js/locales/bootstrap-datepicker.ru.js"></script>
+  <script charset="UTF-8" src="../../js/locales/bootstrap-datepicker.ja.js"></script>
+  <script>
+      function setup() {
+          $('[data-date]').datepicker({
+              format: 'mm/dd/yyyy' // To override locale-specific formats
+          });
+      }
+  </script>
+</head>
+<body data-capture=".datepicker">
+<div class="row">
+  <div class="col-sm-4" data-date="03/03/2013" data-date-language="en"></div>
+  <div class="col-sm-4" data-date="03/03/2013" data-date-language="es" data-date-start-view="1"></div>
+  <div class="col-sm-4" data-date="03/03/2013" data-date-language="fr"></div>
+</div>
+<div class="row">
+  <div class="col-sm-4" data-date="03/03/2013" data-date-language="zh-TW" data-date-start-view="1"></div>
+  <div class="col-sm-4" data-date="03/03/2013" data-date-language="ja"></div>
+  <div class="col-sm-4" data-date="03/03/2013" data-date-language="ru" data-date-start-view="1"></div>
+</div>
+</body>
+</html>

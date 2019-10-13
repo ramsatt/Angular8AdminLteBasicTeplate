@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="script/common.css" rel="stylesheet">
+  <script src="script/common.js"></script>
+  <script>
+      function setup() {
+          $('input').datepicker();
+      }
+  </script>
+</head>
+<body data-capture="input, .datepicker">
+<div class="row">
+  <div class="col-sm-3">
+    <input class="form-control" data-date-week-start="2" type="text" value="03/03/2013">
+  </div>
+  <div class="col-sm-offset-1 col-sm-3">
+    <input class="form-control" data-date-week-start="4" type="text" value="03/03/2013">
+  </div>
+  <div class="col-sm-offset-1 col-sm-3">
+    <input class="form-control" data-date-week-start="6" type="text" value="03/03/2013">
+  </div>
+</div>
+</body>
+</html>

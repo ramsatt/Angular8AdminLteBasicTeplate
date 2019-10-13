@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="script/common.css" rel="stylesheet">
+  <script src="script/common.js"></script>
+  <script>
+      function setup() {
+          $('input').datepicker({
+              multidate: true
+          });
+      }
+  </script>
+</head>
+<body data-capture="input, .datepicker">
+<div class="row">
+  <div class="col-sm-4">
+    <input class="form-control" type="text" value="03/03/2013,03/16/2013">
+  </div>
+  <div class="col-sm-4">
+    <input class="form-control" data-date-start-view="1" type="text" value="03/03/2013,06/16/2013">
+  </div>
+  <div class="col-sm-4">
+    <input class="form-control" data-date-start-view="2" type="text" value="03/03/2013,03/16/2014">
+  </div>
+</div>
+</body>
+</html>

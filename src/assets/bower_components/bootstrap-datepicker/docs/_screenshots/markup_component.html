@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="script/common.css" rel="stylesheet">
+  <script src="script/common.js"></script>
+  <script>
+      function setup() {
+          $('.date').datepicker({
+              format: 'mm-dd-yyyy'
+          });
+      }
+  </script>
+</head>
+<body data-capture=".input-group, .datepicker">
+<div class="row">
+  <div class="col-sm-offset-4 col-sm-3">
+    <div class="input-group date">
+      <input class="form-control" type="text" value="12-02-2012">
+      <div class="input-group-addon">
+        <span class="glyphicon glyphicon-th"></span>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
